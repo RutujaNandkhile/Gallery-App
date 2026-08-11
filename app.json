@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Gallery App",
+    "slug": "gallery-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#0F172A"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.internassignment.galleryapp"
+    },
+    "android": {
+      "package": "com.internassignment.galleryapp",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#0F172A"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to save photos to your gallery.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos to your gallery.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ]
+  }
+}
